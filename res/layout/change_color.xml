@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvActionCS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/picker"
+        android:clickable="true"
+        android:editable="true"
+        android:focusableInTouchMode="true"
+        android:text="Actionbar ColorStart" />
+
+    <TextView
+        android:id="@+id/tvActionCE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvActionCS"
+        android:layout_alignBottom="@+id/tvActionCS"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@+id/tvActionCS"
+        android:clickable="true"
+        android:editable="true"
+        android:focusableInTouchMode="true"
+        android:text="Actionbar ColorEnd" />
+
+    <com.larswerkman.holocolorpicker.ColorPicker
+        android:id="@+id/picker"
+        android:layout_width="250px"
+        android:layout_height="250px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/tvTileFCS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvTitleBackCE"
+        android:layout_alignBottom="@+id/tvTitleBackCE"
+        android:layout_alignLeft="@+id/tvBackgroundCS"
+        android:clickable="true"
+        android:editable="true"
+        android:focusableInTouchMode="true"
+        android:text="Tile Foreground Color" />
+
+    <TextView
+        android:id="@+id/tvTitleBackCS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvBackgroundCE"
+        android:layout_alignBottom="@+id/tvBackgroundCE"
+        android:layout_alignLeft="@+id/tvIconCE"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:editable="true"
+        android:focusableInTouchMode="true"
+        android:text="Tile Background Color Start" />
+
+    <TextView
+        android:id="@+id/tvBackgroundCS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvTextColor"
+        android:layout_alignBottom="@+id/tvTextColor"
+        android:layout_alignLeft="@+id/tvTitleBackCS"
+        android:clickable="true"
+        android:editable="true"
+        android:focusableInTouchMode="true"
+        android:text="Background Color Start" />
+
+    <com.larswerkman.holocolorpicker.OpacityBar
+        android:id="@+id/opacitybar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/picker"
+        android:layout_alignLeft="@+id/tvActionCE"
+        android:layout_alignRight="@+id/tvActionSTC" />
+
+    <com.larswerkman.holocolorpicker.ValueBar
+        android:id="@+id/valuebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/opacitybar"
+        android:layout_alignLeft="@+id/opacitybar"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="18dp" />
+
+    <TextView
+        android:id="@+id/tvActionTC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvActionCS"
+        android:clickable="true"
+        android:editable="true"
+        android:focusableInTouchMode="true"
+        android:text="Actionbar Title Color" />
+
+    <TextView
+        android:id="@+id/tvIconCS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvActionSTC"
+        android:layout_alignBottom="@+id/tvActionSTC"
+        android:layout_alignParentLeft="true"
+        android:clickable="true"
+        android:editable="true"
+        android:focusableInTouchMode="true"
+        android:text="Icon Color Start" />
+
+    <Button
+        android:id="@+id/newThemeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/tvTileFCE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/newThemeButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/tvTitleBackCE"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:editable="true"
+        android:focusableInTouchMode="true"
+        android:text="Foreground Color End" />
+
+    <TextView
+        android:id="@+id/tvTitleBackCE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvTileFCE"
+        android:layout_alignRight="@+id/tvBackgroundCE"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:editable="true"
+        android:focusableInTouchMode="true"
+        android:text="Tile Background Color End" />
+
+    <TextView
+        android:id="@+id/tvBackgroundCE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvTitleBackCE"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:editable="true"
+        android:focusableInTouchMode="true"
+        android:text="Background Color End" />
+
+    <TextView
+        android:id="@+id/tvTextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvBackgroundCE"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="17dp"
+        android:clickable="true"
+        android:editable="true"
+        android:focusableInTouchMode="true"
+        android:text="text Color" />
+
+    <TextView
+        android:id="@+id/tvActionSTC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvActionCE"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:editable="true"
+        android:focusableInTouchMode="true"
+        android:text="Actionbar SubTitle Color" />
+
+    <TextView
+        android:id="@+id/tvIconCE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvActionCE"
+        android:layout_below="@+id/tvActionTC"
+        android:clickable="true"
+        android:editable="true"
+        android:focusableInTouchMode="true"
+        android:text="Icon Color End" />
+
+    <TextView
+        android:id="@+id/tvStrokeC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvTileFCE"
+        android:layout_alignBottom="@+id/tvTileFCE"
+        android:layout_alignRight="@+id/tvTileFCS"
+        android:clickable="true"
+        android:editable="true"
+        android:focusableInTouchMode="true"
+        android:text="Stroke Color" />
+
+</RelativeLayout>

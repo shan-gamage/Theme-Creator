@@ -1,0 +1,59 @@
+#
+# generated on 2014/07/28 11:27:46
+#
+# --table-start--
+dataClass=com.shana.android.themeCreater.theme.Theme
+tableName=theme
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=actionbarColorStart
+# --field-end--
+# --field-start--
+fieldName=actionbarColorEnd
+# --field-end--
+# --field-start--
+fieldName=actionbarTitleColor
+# --field-end--
+# --field-start--
+fieldName=actionbarSubTitleColor
+# --field-end--
+# --field-start--
+fieldName=iconColorStart
+# --field-end--
+# --field-start--
+fieldName=iconColorEnd
+# --field-end--
+# --field-start--
+fieldName=textColor
+# --field-end--
+# --field-start--
+fieldName=backgroundColorStart
+# --field-end--
+# --field-start--
+fieldName=backgroundColorEnd
+# --field-end--
+# --field-start--
+fieldName=tileBackgroundColorStart
+# --field-end--
+# --field-start--
+fieldName=tileBackgroundColorEnd
+# --field-end--
+# --field-start--
+fieldName=tileForegroundColorStart
+# --field-end--
+# --field-start--
+fieldName=tileForegroundColorEnd
+# --field-end--
+# --field-start--
+fieldName=strokeColor
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
